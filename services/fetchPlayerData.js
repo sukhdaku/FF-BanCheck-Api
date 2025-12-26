@@ -42,7 +42,7 @@ async function fetchPlayerData(uid) {
   if (!uid) throw new Error("UID required!");
 
   try {
-    const response = await axios.get(`https://info-wotaxxdev-api.vercel.app/info?uid=${uid}`, {
+    const response = await axios.get(`https://deepinfosukh.vercel.app/info?uid=${uid}`, {
       timeout: 7000
     });
 
@@ -77,6 +77,7 @@ async function fetchPlayerData(uid) {
 }
 
 module.exports = { fetchPlayerData };
+
 
 
 
